@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    background-color: rgb(185, 185, 185);
+}
+.header_image{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(img/background1.jpg);
+    height: 250px;
+    object-fit: contain;
+    margin: 0;
+}
+.header_image h1{
+    color: white;
+}
+.header_image a:active{
+    color: black;
+}
+.header_image a{
+    color: black;
+    padding: 100px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(19, 152, 193);  
+    padding: 1px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+a{
+    text-decoration: none;
+    margin: 1px 5px;
+}
+nav a:hover{
+    border-radius: 5px;
+    background-color: darkblue;
+    color: white;
+    transition-duration: 0.5s;
+}
+.about_me{
+    font-size: large;
+    padding: 30px 12%;
+    padding-right: 50%;
+}
