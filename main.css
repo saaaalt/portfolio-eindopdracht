@@ -223,10 +223,19 @@ form img{
     justify-content: center;
 }
 
+table{
+    background-color: white;
+    color: black;
+}
+
+td:hover{
+    transition-duration: 0.2s;
+    background-color: grey;
+}
+
 th{
     padding: 0.3rem;
     font-size: 2rem;
-    width: 20%;
 }
 
 tr{
@@ -238,5 +247,5 @@ td{
 }
 
 table,tr,th,td{
-    border: 0.3rem solid;
+    border: 0.3rem solid black;
   }
