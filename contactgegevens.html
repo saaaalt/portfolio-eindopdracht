@@ -4,18 +4,34 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contactgegevens</title>
+        <title>Home page</title>
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <div class="header_image">
-            <h1><a href="./index.html">Wesley Li</a></h1>
-        </div>
         <nav>
             <ul>
-                <a href="./overmij.html">Over Mij</a>
-                <a href="./portfolio.html">Portfolio</a>
-                <a href="./contactgegevens.html">Contactgegevens</a>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./overmij.html">Over Mij</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./interview.html">Interview</a></li>
+                <li><a href="./contactgegevens.html">Contactgegevens</a></li>
             </ul>
         </nav>
-    </body
+        <div class="bg-image"></div>
+        <div class="contactinfo">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.0005078981794!2d4.819307812404689!3d51.586554071714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c69f58378a0963%3A0x30eb86276a041c8!2sSterrebos%20181%2C%204817%20SE%20Breda!5e0!3m2!1sen!2snl!4v1696583659947!5m2!1sen!2snl" width="500" height="490" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="mailto:9023254@student.zadkine.nl" method="post">
+                <h1><span style="color: green">Contactgegevens</span></h1>
+                <p><img src="./img/phone_icon.png" alt="phone icon">: 06 29219698</p>
+                <p><img src="./img/home_icon.png" alt="home icon">: Sterrebos 181, 4817 SE</p>
+                <p><img src="./img/letter_icon.png" alt="letter icon">: liwesley23@gmail.com</p><br>
+                <label for="name">Naam:</label>
+                <input type="text" id="name" autocomplete="off"><br>
+                <label for="email">E-mailadres:</label>
+                <input type="text" id="email" autocomplete="off"><br>
+                <textarea name="message" id="message" cols="50" rows="10"></textarea>
+                <input type="submit" title="Verzend">
+            </form>
+        </div>
+    </body>
+</html>

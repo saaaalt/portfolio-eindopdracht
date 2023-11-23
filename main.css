@@ -1,52 +1,251 @@
-body{
-    margin: 0;
-    background-color: rgb(185, 185, 185);
-}
-.header_image{
+body, html{
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
+    height: 100%;
+    margin: 0;
+    font-size: 10px;
+    background-color: rgb(0,0,0);
+}
+.bg-image{
+    background-image: url(./img/background.jpg);
+    filter: blur(m3px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 94.5%;
+}
+
+h1{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(img/background1.jpg);
-    height: 250px;
-    object-fit: contain;
-    margin: 0;
 }
-.header_image h1{
-    color: white;
-}
-.header_image a:active{
-    color: black;
-}
-.header_image a{
-    color: black;
-    padding: 100px;
-}
+
 nav{
     display: flex;
     justify-content: center;
-    background-color: rgb(19, 152, 193);  
-    padding: 1px;
+    padding: 0.1rem;
 }
 ul{
     display: flex;
     justify-content: space-around;
-    width: 70%;
+    width: 80%;
+    padding-right: 55%;
 }
 a{
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    margin: 1px 5px;
 }
 nav a:hover{
-    border-radius: 5px;
-    background-color: darkblue;
+    border: 1.6rem;
+    border-radius: 0.5rem;
+    background-color: rgb(81, 81, 81);
     color: white;
     transition-duration: 0.5s;
+    text-decoration: underline;
 }
+
+.homepage{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    font-weight: bold;
+    border: 0.3rem solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 60%;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.homepage img{
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+}
+
 .about_me{
-    font-size: large;
-    padding: 30px 12%;
-    padding-right: 50%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    border: 0.3rem solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 2rem;
+    font-size: 1.5rem;
 }
+
+.about_me p,h1,h2{
+    padding: 1rem 1.5rem 0;
+}
+
+.about_me a{
+    padding: 1rem 1.5rem 0;
+    color: #0080ff;}
+
+.about_me a:hover{
+    color: blueviolet;
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
+
+.images{
+    width: 35%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cats{
+    display: flex;
+    flex-direction: row;
+}
+
+.cats img,video{
+    padding-top: 1rem;
+    padding-right: 1rem;
+    width: 48.5%;
+    height: 100%;
+}
+
+.contactinfo{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    border: 0.3rem solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+
+form p{
+    padding: 0.3rem;
+    margin: 0;
+}
+
+form img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    border: 0.3rem solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+.tilestructure{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.tile{
+    color: black;
+    background-color: white;
+    height: 28.5rem;
+    width: 30rem;
+    margin: 2rem;
+    border-radius: 5%;
+}
+
+.tile img{
+    width: 30rem;
+    height: 20rem;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+}
+
+.tile a{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.tile p{
+    font-weight: bold;
+    color: rgb(0, 221, 255);
+    font-size: 1.2rem;
+    margin-left: 2rem;
+}
+
+.interview{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.8);
+    color: white;
+    border: 0.3rem solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 2rem;
+    font-size: 1.6rem;
+    width: 80%;
+}
+
+.interview p{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    background-color: white;
+    color: black;
+}
+
+td:hover{
+    transition-duration: 0.2s;
+    background-color: grey;
+}
+
+th{
+    padding: 0.3rem;
+    font-size: 2rem;
+}
+
+tr{
+    margin: 0.3rem;
+}
+
+td{
+    padding: 1rem;
+}
+
+table,tr,th,td{
+    border: 0.3rem solid black;
+  }
